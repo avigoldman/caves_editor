@@ -1,0 +1,250 @@
+/*general*/
+body {
+	margin:0;
+	background:#5095A5;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.error {
+	color:red;
+}
+
+button {
+	padding:10px 16px;
+	border-radius: 5px;
+	font-size: 14px;
+	background:rgba(255, 255, 255, 0.18);
+	color:rgb(244, 242, 242);
+	border:2px solid rgba(255, 255, 255, 0.72);
+	color:white;
+}
+
+.hide {
+	display: none;
+}
+
+/* Scrollbar */ 
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background:rgba(255,255,255,.4);
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/* End Scrollbar */
+
+/*controls*/
+
+#controls {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+	padding:8px;
+	width: 100%;
+	box-sizing:border-box;
+	color:white;
+}
+
+#controls #logo {
+	background:rgba(255,255,255,.2);
+	height: 100%;
+	top:0;
+	left:0;
+	position: absolute;
+	padding:0px 10px;
+	font-size: 25px;
+	letter-spacing: 9px;
+}
+
+#controls #right {
+	float:right;
+}
+
+#controls button {
+	margin:0;
+	height:100%;
+}
+
+#controls button:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+
+#files-controls #files-form {
+	position: absolute;
+	display: none;
+	right:0;
+	background:#5095A5;
+	padding:10px;
+}
+
+#message {
+	position: absolute;
+	left:0;
+	right:0;
+	top:20px;
+	text-align: center;
+	width:200px;
+	margin:auto;
+}
+
+/*container*/
+#container {
+	width:100%;
+	height:100%;
+	top:0;
+	position: relative;
+	box-sizing:border-box;
+	padding-top:30px;
+	padding-left:0px;
+	padding-bottom: 100px;
+	padding-right:0px;
+	display: flex;
+}
+
+/*settings*/
+#settings {
+	width:12%;
+	position: relative;
+	top:0;
+	height:100%;
+	/*transition: .2s all linear;*/
+	background:whitesmoke;
+	z-index: 100;
+	min-width: 214px;
+}
+
+#settings.show {
+	margin-left:0 !important;
+	opacity: 1;
+}
+
+#settings #hide-settings {
+	position: absolute;
+	top:0;
+	right:0;	
+}
+
+
+#settings button.accordion {
+	border-radius: 0;
+	padding:10px 0px;
+	width:100%;
+	color:black;
+	border:none;
+	border-bottom:1px solid #E8E8E8;
+	outline: 0;
+}
+
+#settings section.accordion {
+	display: none;
+	border-bottom:1px solid #E8E8E8;
+}
+
+/*coder*/
+#coder {
+	height:100%;
+	width:52%;
+	box-sizing:border-box;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	/*transition: .2s all linear;*/
+}
+
+#coder #code {
+	margin:0;
+	outline: 0;
+	height:100%;
+	width:100%;
+	max-height:100%;
+	max-width:100%;
+	border:0;
+}
+
+.ace_scrollbar-v {
+	display: block !important;
+}
+
+.ace_scroller {
+	right:12px !important;
+}
+
+
+/*ouput*/
+#output {
+	height:100%;
+	width:48%;
+	box-sizing:border-box;
+	background:#FFFFFF;
+	/*transition: .2s all linear;*/
+	position: relative;
+}
+
+#output #graphics-container {
+	height:100%; width:100%;
+}
+
+#output #graphics {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#output #instructions {
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+/*console*/
+
+#console-container {
+	box-sizing: border-box;
+	background: rgba(0,0,0,.1);
+	bottom:0;
+	left:0;
+	z-index: 100;
+	position: absolute;
+	height:100px;
+	width:100%;
+	padding:4px 5px 26px 5px;
+	border-top: 5px solid transparent;
+}
+
+#console {
+	background: #F4F2F2;
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:3px;
+	font-size: 12px;
+	box-sizing:border-box;
+	border:1px solid rgba(0, 0, 0, .2);
+	overflow-y: scroll;
+	word-wrap:break-word;
+}
+
+
+#footer {
+	height:20px;
+	width:100%;
+	position: absolute;
+	border-top: 1px solid rgba(255, 255, 255, 0.22);
+	background: rgba(255, 255, 255, 0.1);
+	bottom:0;
+	left:0;
+	z-index: 100;
+}

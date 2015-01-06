@@ -1,0 +1,85 @@
+<html> 
+<head> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/resources/jquery.min.js" type="text/javascript"></script>
+  <script src="js/skulpt.min.js" type="text/javascript"></script>
+  <script src="js/skulpt-stdlib.js" type="text/javascript"></script>
+   <script src="src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+  <div id="controls" class="light">
+    <div id="logo">C.A.V.E.S</div>
+    <span id="runners">
+      <button id="run-code">Run</button> 
+    </span>
+    <span id="file-name"></span>
+    <div id="message"></div>
+    <!-- <button>Delete</button> -->
+    
+    <div id="right">
+      <div id="files-controls">
+        <button id="save-file">Save</button>
+        <button id="new-file">New</button>
+        <button id="open-file">File</button>
+        <form action="" id="files-form">
+            <label for="files">Files:</label>
+            <select name="files" id="files">
+            </select>
+            <br>
+            <button >Open</button>
+            <button id="delete-file">Delete</button>
+          </form>
+        </div>
+      <!-- <button>About</button> --> 
+    </div>
+  </div>
+
+  <div id="container">
+    <div id="settings">
+      <!-- <a id="hide-settings" href="#">X</a> -->
+      <button class="accordion">Options</button>
+      <section class="accordion">
+        <label for="theme">Theme:</label>
+        <select name="theme" id="theme">
+            <optgroup label="Bright"><option value="ace/theme/chrome">Chrome</option><option value="ace/theme/clouds">Clouds</option><option value="ace/theme/crimson_editor">Crimson Editor</option><option value="ace/theme/dawn">Dawn</option><option value="ace/theme/dreamweaver">Dreamweaver</option><option value="ace/theme/eclipse">Eclipse</option><option value="ace/theme/github">GitHub</option><option value="ace/theme/solarized_light">Solarized Light</option><option value="ace/theme/textmate">TextMate</option><option value="ace/theme/tomorrow">Tomorrow</option><option value="ace/theme/xcode">XCode</option><option value="ace/theme/kuroir">Kuroir</option><option value="ace/theme/katzenmilch">KatzenMilch</option></optgroup><optgroup label="Dark"><option value="ace/theme/ambiance">Ambiance</option><option value="ace/theme/chaos">Chaos</option><option value="ace/theme/clouds_midnight">Clouds Midnight</option><option value="ace/theme/cobalt">Cobalt</option><option value="ace/theme/idle_fingers">idle Fingers</option><option value="ace/theme/kr_theme">krTheme</option><option value="ace/theme/merbivore">Merbivore</option><option value="ace/theme/merbivore_soft">Merbivore Soft</option><option value="ace/theme/mono_industrial">Mono Industrial</option><option value="ace/theme/monokai">Monokai</option><option value="ace/theme/pastel_on_dark">Pastel on dark</option><option value="ace/theme/solarized_dark">Solarized Dark</option><option value="ace/theme/terminal">Terminal</option><option value="ace/theme/tomorrow_night">Tomorrow Night</option><option value="ace/theme/tomorrow_night_blue">Tomorrow Night Blue</option><option value="ace/theme/tomorrow_night_bright">Tomorrow Night Bright</option><option value="ace/theme/tomorrow_night_eighties">Tomorrow Night 80s</option><option value="ace/theme/twilight">Twilight</option><option value="ace/theme/vibrant_ink">Vibrant Ink</option></optgroup>
+        </select>
+
+      </section>
+      <button class="accordion">Templates</button>
+      <section class="accordion">
+        <ul id="templates">
+          
+        </ul>
+      </section>
+      <button class="accordion">Challenges</button>
+      <section class="accordion">
+        For challenges please visit <a href="http://codingbat.com/python" target="_blank">Coding Bat</a>
+      </section>
+    </div>
+    <div id="coder">
+      <div id="code"></div>
+    </div>
+    <div id="output">
+      <div id="graphics-container">
+        <canvas id="graphics" height="100" width="300"></canvas>
+      </div>
+      <div id="instructions" class="hide"></div>
+    </div>
+    <div id="console-container">
+      <pre id="console"></pre>
+    </div>
+    <div id="footer">
+      &copy; Avi Goldman 2014
+    </div>
+  </div>
+
+  <!-- basic functionality -->
+  <script src="js/script.js" type="text/javascript"></script>
+  <!-- options and files -->
+  <script src="js/options.js" type="text/javascript"></script>
+  <!-- templates -->
+  <script src="js/templates.js" type="text/javascript"></script>
+</body> 
+  
+</html> 
